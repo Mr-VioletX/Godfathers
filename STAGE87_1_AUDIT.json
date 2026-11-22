@@ -1,0 +1,67 @@
+{
+  "stage": "87.1",
+  "version": "1.8.3.0",
+  "source": {
+    "version": "1.8.2.9",
+    "sha256": "b10dde471eae68c3ec590ca0d41d5faadf448bec2839b4d0714f4c8792c1d063"
+  },
+  "roadmap_stages": 10,
+  "access_level": 50,
+  "max_player_level": 60,
+  "elite_xp": {
+    "50": 180000,
+    "51": 220000,
+    "52": 270000,
+    "53": 330000,
+    "54": 400000,
+    "55": 480000,
+    "56": 570000,
+    "57": 670000,
+    "58": 780000,
+    "59": 900000
+  },
+  "dark_ranks": 8,
+  "contracts": 4,
+  "approaches": 3,
+  "starter_recruits": 4,
+  "mechanics": [
+    "energy",
+    "heat",
+    "intel",
+    "streak",
+    "entry stake",
+    "hidden persisted roll",
+    "dual XP",
+    "influence ranking",
+    "lazy recovery"
+  ],
+  "tables": [
+    "dark_world_profiles",
+    "dark_world_recruits",
+    "dark_world_contract_logs"
+  ],
+  "schema_migration_required": false,
+  "tests": {
+    "compileall": "passed",
+    "utf8_ast": {
+      "passed": true,
+      "python_files": 257
+    },
+    "stage87_1": "passed",
+    "stage86": "passed",
+    "stage85": "passed",
+    "stage84": "passed",
+    "stage83": "passed",
+    "stage82": "passed",
+    "baseline": {
+      "passed": 36,
+      "failed": 0
+    }
+  },
+  "transaction_safety": {
+    "local_debounce": true,
+    "persistent_user_lock": true,
+    "callback_idempotency": true,
+    "single_success_commit_per_action": true
+  }
+}

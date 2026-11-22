@@ -1,0 +1,73 @@
+{
+  "release": "v1.8.3.2",
+  "stage": "87.3",
+  "name": "Strategic Pursuit and Hideout",
+  "generated_at_utc": "2026-09-02T20:58:48.996728+00:00",
+  "base_release": "v1.8.3.1-stage87-2-branching-contracts.zip",
+  "access_level": 35,
+  "level_cap": 60,
+  "content": {
+    "hidden_threats": 3,
+    "counter_plans": 4,
+    "heat_bands": 5,
+    "hideout_levels": 5,
+    "escape_plans": 3,
+    "max_clues": 3,
+    "false_leads_per_threat": 1
+  },
+  "mechanics": [
+    "persistent hidden threat",
+    "paid reconnaissance",
+    "mixed true and false clues",
+    "asymmetric counterplay",
+    "hideout upgrades",
+    "forged identities",
+    "nationwide pursuit gate",
+    "Dark World prison",
+    "branching escape plans"
+  ],
+  "persistence": {
+    "tables": [
+      "dark_world_hideouts",
+      "dark_world_pursuit_logs"
+    ],
+    "restart_safe": [
+      "threat_key",
+      "threat_roll_bp",
+      "clue_order_json",
+      "clues_json",
+      "threat_expires_at",
+      "prison_until"
+    ],
+    "manual_migration_required": false
+  },
+  "strategy": {
+    "paper_trail_counter": "bribe",
+    "camera_net_counter": "relocate",
+    "tactical_raid_counter": "fortify",
+    "wildcard": "disguise",
+    "guaranteed_best_button": false,
+    "player_reasoning_required": true
+  },
+  "security": {
+    "owner_bound_callbacks": true,
+    "persistent_economic_guard": true,
+    "guarded_mutations": [
+      "recon",
+      "counter-plan",
+      "hideout upgrade",
+      "identity purchase",
+      "prison escape"
+    ],
+    "telegram_callback_limit_ok": true
+  },
+  "tests": {
+    "v1_8_3_2_logic_test.py": "pass",
+    "v1_8_3_1_logic_test.py": "pass",
+    "v1_8_3_0_logic_test.py": "pass",
+    "v1_8_2_0_logic_test.py": "36 passed, 0 failed",
+    "v1_8_2_5_to_2_9": "pass",
+    "compileall": "pass",
+    "utf8_ast": "267 Python files passed"
+  }
+}

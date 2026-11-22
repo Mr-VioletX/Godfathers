@@ -1,0 +1,54 @@
+{
+  "release": "v1.8.3.7",
+  "stage": "87.8",
+  "name": "Multiplayer Raids and Information Warfare",
+  "generated_at_utc": "2026-09-02T21:49:37.318272+00:00",
+  "base_release": "v1.8.3.6-stage87-7-black-finance-fictional-roadmap.zip",
+  "content": {
+    "attack_approaches": 3,
+    "defense_doctrines": 3,
+    "forming_minutes": 10,
+    "support_slots_per_side": 2,
+    "recon_ttl_hours": 2,
+    "daily_raid_limit": 3,
+    "pair_cooldown_hours": 12
+  },
+  "strategy": [
+    "cyclic matchup",
+    "possibly deceptive reconnaissance",
+    "persistent defense doctrine",
+    "attacker and defender NPC teams",
+    "hideout level and integrity",
+    "influence and level",
+    "multiplayer support choice"
+  ],
+  "security": [
+    "self-target blocked",
+    "paid reconnaissance",
+    "dirty-money stake",
+    "atomic support capacity",
+    "unique raid participant",
+    "atomic exactly-once resolution",
+    "loot cap",
+    "daily cap",
+    "pair cooldown"
+  ],
+  "persistence": {
+    "tables": [
+      "dark_world_raid_defenses",
+      "dark_world_recons",
+      "dark_world_raids",
+      "dark_world_raid_participants",
+      "dark_world_raid_logs"
+    ],
+    "manual_migration_required": false
+  },
+  "tests": {
+    "v1_8_3_7_logic_test.py": "pass",
+    "v1_8_3_0_to_3_6": "pass",
+    "v1_8_2_5_to_2_9": "pass",
+    "v1_8_2_0_logic_test.py": "36 passed, 0 failed",
+    "compileall": "pass",
+    "utf8_ast": "292 Python files passed"
+  }
+}

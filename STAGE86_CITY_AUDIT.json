@@ -1,0 +1,103 @@
+{
+  "stage": 86,
+  "version": "1.8.2.9",
+  "generated_at": "2026-09-02T22:49:07+03:30",
+  "source": {
+    "release": "v1.8.2.8",
+    "sha256": "19bab3c7b31c25740b0d6f8a532524e9cb01b1e0e487c83a13da091a18ec3bf5"
+  },
+  "population": {
+    "root_cause_expression": "40 * (4 ** 10 + 1)",
+    "legacy_seed": 41943080,
+    "legacy_seed_exceeds_cap": true,
+    "population_cap": 25000000,
+    "starting_population": 100,
+    "small_house_residents": 6,
+    "starter_small_houses": 17,
+    "automatic_repair": [
+      "hourly city tick",
+      "first city interaction"
+    ],
+    "preserves": {
+      "earned_population_growth": true,
+      "user_built_houses_above_legacy_seed": true
+    },
+    "examples": [
+      {
+        "old_base": 41943080,
+        "old_population": 41943080,
+        "new_base": 100,
+        "new_population": 100
+      },
+      {
+        "old_base": 41943080,
+        "old_population": 42000000,
+        "new_base": 100,
+        "new_population": 57020
+      }
+    ],
+    "schema_migration_required": false
+  },
+  "batch_construction": {
+    "min": 1,
+    "max": 10000,
+    "presets": [
+      1,
+      5,
+      10,
+      25,
+      50,
+      100,
+      500,
+      1000
+    ],
+    "custom_input": true,
+    "invoice_before_payment": true,
+    "explicit_confirmation": true,
+    "callback_protocol": [
+      "city:bq",
+      "city:bv",
+      "city:bx",
+      "city:bc"
+    ],
+    "legacy_callback_safe_redirect": true,
+    "single_spend": true,
+    "single_queue_row": true,
+    "queue_qty": true,
+    "single_commit": true,
+    "partial_build_possible": false,
+    "simultaneous_duration": true,
+    "subscription_discount_supported": true,
+    "resource_shortage_preview": true,
+    "pending_qty_in_welfare_cap": true,
+    "telegram_callback_max_bytes_tested": 54
+  },
+  "changed_runtime_files": [
+    "VERSION.txt",
+    "app/data/mafia_city.py",
+    "app/services/mafia_city_service.py",
+    "app/keyboards/city_menu.py",
+    "app/handlers/city.py",
+    "app/states.py"
+  ],
+  "test_files": [
+    "v1_8_2_9_logic_test.py",
+    "v1_8_2_8_logic_test.py"
+  ],
+  "tests": {
+    "compileall": "passed",
+    "utf8_ast": {
+      "passed": true,
+      "python_files": 251
+    },
+    "stage86": "passed",
+    "stage85": "passed",
+    "stage84": "passed",
+    "stage83": "passed",
+    "stage82": "passed",
+    "baseline": {
+      "passed": 36,
+      "failed": 0
+    }
+  }
+}

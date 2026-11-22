@@ -1,0 +1,82 @@
+{
+  "release": "v1.8.3.3",
+  "stage": "87.4",
+  "name": "Strategic Advanced NPC Crew",
+  "generated_at_utc": "2026-09-02T21:06:41.325189+00:00",
+  "base_release": "v1.8.3.2-stage87-3-strategic-pursuit.zip",
+  "content": {
+    "npcs": 8,
+    "classes": 6,
+    "active_team_size": 3,
+    "levels": 10,
+    "tactics": 3,
+    "training_hours": 6,
+    "rest_hours": 4,
+    "injury_hours": 8,
+    "wage_cycle_days": 7
+  },
+  "mechanics": [
+    "active crew composition",
+    "class diversity synergy",
+    "level",
+    "loyalty",
+    "weekly wages",
+    "fatigue",
+    "rest",
+    "injury",
+    "medic mitigation",
+    "training",
+    "desertion",
+    "reconciliation",
+    "silent/balanced/aggressive tactics"
+  ],
+  "strategy": {
+    "fixed_best_team": false,
+    "tradeoffs": [
+      "chance vs cash",
+      "heat vs reward",
+      "specialisation vs diversity",
+      "training vs availability",
+      "wages vs loyalty",
+      "aggression vs injury"
+    ],
+    "affected_systems": [
+      "timed contracts",
+      "branching cases",
+      "pursuit counterplans"
+    ]
+  },
+  "persistence": {
+    "tables": [
+      "dark_world_recruit_states",
+      "dark_world_teams",
+      "dark_world_recruit_events"
+    ],
+    "manual_migration_required": false,
+    "restart_safe": [
+      "training_until",
+      "rest_until",
+      "injured_until",
+      "wage_due_at",
+      "deserted",
+      "member_keys_json",
+      "tactic_key"
+    ]
+  },
+  "security": {
+    "owner_bound_callbacks": true,
+    "persistent_economic_guard": true,
+    "team_size_server_enforced": 3,
+    "telegram_callback_limit_ok": true
+  },
+  "tests": {
+    "v1_8_3_3_logic_test.py": "pass",
+    "v1_8_3_2_logic_test.py": "pass",
+    "v1_8_3_1_logic_test.py": "pass",
+    "v1_8_3_0_logic_test.py": "pass",
+    "v1_8_2_0_logic_test.py": "36 passed, 0 failed",
+    "v1_8_2_5_to_2_9": "pass",
+    "compileall": "pass",
+    "utf8_ast": "272 Python files passed"
+  }
+}

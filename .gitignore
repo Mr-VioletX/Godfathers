@@ -1,0 +1,59 @@
+# ==========================================
+# Byte-compiled / optimized / DLL files
+# ==========================================
+__pycache__/
+*.py[cod]
+*.class
+
+# ==========================================
+# Virtual Environments
+# ==========================================
+.venv/
+venv/
+ENV/
+env/
+ENV*/
+
+# ==========================================
+# Secrets & Sensitive Environment Variables
+# ==========================================
+.env
+.env.*
+!.env.example
+*.bak
+
+# ==========================================
+# Database & SQLite Files
+# ==========================================
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# ==========================================
+# Logs & Runtime Dumps
+# ==========================================
+*.log
+logs/
+cron.log
+stderr.log
+migrate.log
+cron_state.json
+.stderr_cleanup_state.json
+
+# ==========================================
+# Archive & Temporary Files
+# ==========================================
+*.zip
+*.tar.gz
+*.rar
+tmp/
+
+# ==========================================
+# OS & IDE Settings
+# ==========================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

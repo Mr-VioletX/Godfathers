@@ -1,0 +1,25 @@
+{
+  "release": "v1.8.4.1",
+  "stage": "87.12",
+  "generated_at_utc": "2026-09-02T22:29:41.505207+00:00",
+  "catalog_products": 24,
+  "formula_combinations": 125,
+  "brand_names": 375,
+  "growable_bases": 5,
+  "market_ingredients": 15,
+  "tables": [
+    "dark_world_ingredient_inventory",
+    "dark_world_crop_plots",
+    "dark_world_custom_recipes",
+    "dark_world_custom_batches",
+    "dark_world_custom_inventory",
+    "dark_world_custom_sales"
+  ],
+  "fictional_only": true,
+  "real_recipes": false,
+  "tests": {
+    "stage": "pass",
+    "regressions": "pass",
+    "python_files": 312
+  }
+}

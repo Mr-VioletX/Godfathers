@@ -1,0 +1,27 @@
+{
+  "source_file": "stderr (1).log",
+  "sha256": "f320ef0c15d05bb46a102abbc5e44664a123d06795542b6f7f7d05ed51b82bc6",
+  "file_bytes": 16302095,
+  "line_count": 208534,
+  "logging_error_blocks": 5888,
+  "tracebacks": 5477,
+  "exceptions": {
+    "UnicodeEncodeError": 5476,
+    "sqlalchemy.exc.InvalidRequestError": 1
+  },
+  "unicode_root": "Passenger/cPanel exposed a strict ASCII console stream while log records contained Persian and Unicode characters.",
+  "transaction_root": "news title evaluation swallowed a commit failure and reused the same SQLAlchemy session for the digest query while it was in PREPARED state.",
+  "absent_signatures": [
+    "database is locked",
+    "can't start new thread",
+    "TelegramBadRequest",
+    "TelegramNetworkError",
+    "timeout",
+    "connection error",
+    "NameError",
+    "AttributeError",
+    "TypeError",
+    "KeyError"
+  ],
+  "fixed_in": "1.8.2.6"
+}

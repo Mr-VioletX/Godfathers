@@ -1,0 +1,44 @@
+{
+  "version": "1.8.2.8",
+  "injury_model": {
+    "roll_scope": "one roll per team per training session",
+    "maximum_new_injuries_per_session": 1,
+    "team_base_pct": 4.0,
+    "team_min_pct": 0.5,
+    "team_max_pct": 10.0,
+    "healthy_floor": 11,
+    "twenty_player_equivalent_pct": 0.2,
+    "monte_carlo_trials": 100000,
+    "monte_carlo_team_event_pct": 3.927,
+    "last_healthy_goalkeeper_protected": true
+  },
+  "ucl_policy": {
+    "source": "latest completed Friday League",
+    "minimum_source_teams": 8,
+    "qualified_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "public_registration": false,
+    "automatic_seeding": true,
+    "group_seed_pattern": [
+      1,
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1
+    ],
+    "edition_key_example": "UCL-2026-W36",
+    "correct_ucl_fixture_completion": true
+  },
+  "database_schema_change": false
+}

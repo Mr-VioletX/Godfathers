@@ -1,0 +1,50 @@
+{
+  "release": "v1.8.3.9",
+  "stage": "87.10",
+  "name": "Competitive Season Finale and Final Balancing",
+  "generated_at_utc": "2026-09-02T22:03:42.317669+00:00",
+  "base_release": "v1.8.3.8-stage87-9-narrative-seasons-factions.zip",
+  "content": {
+    "score_dimensions": 7,
+    "divisions": 5,
+    "minimum_activity": 3,
+    "boss_hit_cooldown_hours": 2,
+    "rating_decay_pct": 10
+  },
+  "score_dimensions": [
+    "smuggling",
+    "laundering",
+    "raid wins",
+    "employment",
+    "world boss damage",
+    "faction contribution",
+    "capped influence"
+  ],
+  "balance": [
+    "influence cap",
+    "minimum activity",
+    "frozen final ranks",
+    "reward factor 0.75-1.15",
+    "economy source/sink telemetry",
+    "controlled rating decay"
+  ],
+  "persistence": {
+    "tables": [
+      "dark_world_season_ranks",
+      "dark_world_competitive_profiles",
+      "dark_world_competitive_rewards",
+      "dark_world_balance_snapshots",
+      "dark_world_world_bosses",
+      "dark_world_boss_hits"
+    ],
+    "manual_migration_required": false
+  },
+  "tests": {
+    "v1_8_3_9_logic_test.py": "pass",
+    "v1_8_3_0_to_3_8": "pass",
+    "v1_8_2_5_to_2_9": "pass",
+    "v1_8_2_0_logic_test.py": "36 passed, 0 failed",
+    "compileall": "pass",
+    "utf8_ast": "302 Python files passed"
+  }
+}

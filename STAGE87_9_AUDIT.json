@@ -1,0 +1,51 @@
+{
+  "release": "v1.8.3.8",
+  "stage": "87.9",
+  "name": "Collective Narrative Seasons and Factions",
+  "generated_at_utc": "2026-09-02T21:56:30.687402+00:00",
+  "base_release": "v1.8.3.7-stage87-8-multiplayer-raids-intel-war.zip",
+  "content": {
+    "factions": 3,
+    "chapters": 4,
+    "collective_choices": 12,
+    "chapter_hours": 24,
+    "vote_weight_cap": 5
+  },
+  "factions": {
+    "union": "smuggling market bonus",
+    "iron": "raid bonus",
+    "glass": "recon and laundering bonus"
+  },
+  "systems_affected": [
+    "smuggling payout",
+    "laundering chance",
+    "recon truth chance",
+    "raid power"
+  ],
+  "security": [
+    "one faction per season",
+    "one vote per chapter",
+    "bounded vote weight",
+    "resource-backed contributions",
+    "exactly-once reward claim",
+    "persistent lazy resolution"
+  ],
+  "persistence": {
+    "tables": [
+      "dark_world_seasons",
+      "dark_world_faction_members",
+      "dark_world_season_votes",
+      "dark_world_faction_scores",
+      "dark_world_season_logs"
+    ],
+    "manual_migration_required": false
+  },
+  "tests": {
+    "v1_8_3_8_logic_test.py": "pass",
+    "v1_8_3_0_to_3_7": "pass",
+    "v1_8_2_5_to_2_9": "pass",
+    "v1_8_2_0_logic_test.py": "36 passed, 0 failed",
+    "compileall": "pass",
+    "utf8_ast": "297 Python files passed"
+  }
+}

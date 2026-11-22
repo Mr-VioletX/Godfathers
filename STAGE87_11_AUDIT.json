@@ -1,0 +1,59 @@
+{
+  "release": "v1.8.4.0",
+  "stage": "87.11",
+  "name": "Fictional Product Catalog and Text Laboratory",
+  "generated_at_utc": "2026-09-02T22:18:46.967239+00:00",
+  "base_release": "v1.8.3.9-stage87-10-competitive-finale.zip",
+  "creative_ranks": [
+    "جرقه‌ی کوچه",
+    "پچ‌پچِ مه",
+    "پنجه‌ی شب",
+    "فرمانده‌ی خسوف",
+    "تاج‌دارِ خلأ"
+  ],
+  "content": {
+    "fictional_products": 12,
+    "abstract_material_tokens": 4,
+    "production_modes": 3,
+    "lab_levels": 10,
+    "upgrade_axes": 4
+  },
+  "mechanics": [
+    "quality",
+    "potency",
+    "stability",
+    "yield",
+    "duration",
+    "risk",
+    "condition",
+    "capacity",
+    "accident",
+    "repair",
+    "abstract broker sale"
+  ],
+  "safety": {
+    "fictional_only": true,
+    "real_substances": false,
+    "real_chemistry": false,
+    "actionable_recipes": false,
+    "real_temperatures_or_steps": false
+  },
+  "persistence": {
+    "tables": [
+      "dark_world_labs",
+      "dark_world_lab_materials",
+      "dark_world_product_inventory",
+      "dark_world_production_batches",
+      "dark_world_lab_logs"
+    ],
+    "manual_migration_required": false
+  },
+  "tests": {
+    "v1_8_4_0_logic_test.py": "pass",
+    "v1_8_3_0_to_3_9": "pass",
+    "v1_8_2_5_to_2_9": "pass",
+    "v1_8_2_0_logic_test.py": "36 passed, 0 failed",
+    "compileall": "pass",
+    "utf8_ast": "307 Python files passed"
+  }
+}
